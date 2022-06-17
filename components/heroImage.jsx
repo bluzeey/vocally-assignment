@@ -1,20 +1,35 @@
+import { faFacebook,faTwitter,faYoutube,faLinkedIn,faInstagram} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function HeroImage(){
     return (
-        <div classname="flex flex-row">
-            <div className="flex flex-col">
-                <h1 className="text-4xl font-bold">
-                    {`Vehicle Maintainance 
-                    From the Comfort of 
-                    Your Home`}
+        <>
+        <div className="flex justify-around items-center bg-gray-900 text-white font-Open-Sans p-4">
+            <div className="flex flex-col m-2">
+                <h1 className="text-4xl font-bold mb-8">
+                    Vehicle Maintainance <br/>
+                    From the Comfort of <br/>
+                    Your Home
                 </h1>
-                <p className="text-gray-600">Open Auto Soothes the hassle of maintaining your vehicle and helps you deal with unexpected repairs worry free.</p>
-                <form className="flex flex-col max-w-md">
-                    <input type="text" placeholder="Enter Your Name"/>
-                    <input type="text" placeholder="Enter Your Email"/>
-                    <button type="submit">Submit</button>
+                <p className="text-gray-600 mb-8">Open Auto Soothes the hassle of maintaining your vehicle and <br/>helps you deal with unexpected repairs worry-free.</p>
+                <form className="flex flex-col w-2/3">
+                    <input type="text" className="fields" placeholder="Enter Your Name"/>
+                    <input type="text" className="fields" placeholder="Enter Your Email"/>
+                    <button className="buttons" type="submit">Submit</button>
                 </form>
             </div>
             <img className="max-w-lg" src="/pi.png" alt="The image"/>
         </div>
+        <div className="bg-gray-900 flex justify-between items-center p-2 text-white">
+            <p className="text-gray-900">a</p>
+            <img src="./arrow.PNG" className=""/>
+            <div className="flex flex-end justify-around p-2 w-48">
+                <FontAwesomeIcon icon={faFacebook} className="h-5 w-5"/>
+                <FontAwesomeIcon icon={faTwitter} className="h-5 w-5"/>
+                <FontAwesomeIcon icon={faYoutube} className="h-5 w-5"/>
+                <FontAwesomeIcon icon={faLinkedIn} className="h-5 w-5"/>
+                <FontAwesomeIcon icon={faInstagram} className="h-5 w-5"/>
+            </div>
+        </div>
+        </>
     )
 }

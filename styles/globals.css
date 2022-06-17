@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .fields {
+     @apply rounded-full px-5 py-2 mb-5 bg-gray-900 text-gray-700 border-2 border-gray-700
+  }
+  .buttons{
+     @apply font-bold px-5 py-2 border-2 border-gray-700 rounded-full
+  }
+}
