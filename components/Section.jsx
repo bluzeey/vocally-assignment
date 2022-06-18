@@ -1,6 +1,6 @@
 export default function Section(){
     return (
-        <div className="flex justify-around bg-gray-900 text-white font-Open-Sans p-4">
+        <div className="xs:flex flex-col xs:text-center md:flex-row md:text-left justify-around items-center bg-gray-900 text-white font-Open-Sans p-4">
            <img className="p-2 max-w-md" src="pickuservice.png"/>
            <div className="p-2 max-w-lg">
             <h1 className="text-4xl font-bold mb-8">Focused on Time Saving</h1>

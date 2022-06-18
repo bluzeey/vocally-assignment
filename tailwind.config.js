@@ -6,6 +6,10 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens:{
+      'xs':'480px',
+      ...defaultTheme.screens
+    },
     extend: {
       fontFamily: {
         "Open-Sans":["Open Sans",...defaultTheme.fontFamily.sans],
